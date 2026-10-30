@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Organisasi Mahasiswa</title>
+    <link rel="shortcut icon" href="media/icon-web.png" type="image/x-icon" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap");
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        background-color: #f3f8ff;
+        color: #334155;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      main,
+      header {
+        max-width: 680px;
+        width: 100%;
+      }
+
+      body > * {
+        background: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(236, 72, 153, 0.08);
+      }
+
+      body {
+        flex-direction: column;
+        gap: 0;
+      }
+
+      header {
+        text-align: center;
+        padding: 30px 20px 10px;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      header img {
+        border-radius: 50%;
+        padding: 6px;
+        background: #fbcfe8; /* Soft pink border accent */
+        box-shadow: 0 4px 12px rgba(244, 114, 182, 0.2);
+        transition: transform 0.3s ease;
+      }
+
+      header img:hover {
+        transform: scale(1.05) rotate(-3deg);
+      }
+
+      h1 {
+        font-size: 1.4rem;
+        color: #db2777;
+        margin-top: 15px;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+
+      hr {
+        display: none;
+      }
+
+      main {
+        padding: 10px 25px 30px;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+
+      section {
+        background: #fff5f8;
+        border: 1.5px solid #fce7f3;
+        border-radius: 16px;
+        padding: 20px;
+        margin-top: 18px;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+        color: #0284c7;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      h2::before {
+        content: "🐇";
+        font-size: 0.9rem;
+      }
+
+      audio {
+        width: 100%;
+        height: 42px;
+        border-radius: 30px;
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05));
+      }
+
+      video {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="media/logo-png.png"
+        alt="Logo Organisasi Mahasiswa"
+        width="100"
+      />
+      <h1>Profil Organisasi Mahasiswa Pecinta NewJeans</h1>
+    </header>
+
+    <hr />
+
+    <main>
+      <section>
+        <h2>Audio Profil</h2>
+        <audio controls>
+          <source src="media/Supernatural.mp3" type="audio/mpeg" />
+          Browser Anda tidak mendukung elemen audio.
+        </audio>
+      </section>
+
+      <section>
+        <h2>Video Profil</h2>
+        <video width="640" height="360" controls>
+          <source src="media/profil.mp4" type="video/mp4" />
+          Browser Anda tidak mendukung elemen video.
+        </video>
+      </section>
+    </main>
+  </body>
+</html>
